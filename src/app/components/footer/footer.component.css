@@ -1,0 +1,20 @@
+.pie-pagina{
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: black;
+    opacity: .8;
+    box-shadow: 0px 7px 44px 0px rgba(150,148,150,1);
+}
+
+.sub-menu-pie{
+    width: 90%;
+    margin: auto;
+}
+
+.logo-footer {
+    width: 90%;
+    max-width: 290px;
+    min-width: 200px;
+    transition: all .5s ease-in-out;
+}
