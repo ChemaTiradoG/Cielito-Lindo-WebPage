@@ -1,44 +1,35 @@
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: transparent;">
-    <a class="navbar-brand" href="#"> </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" style="justify-content: left;align-items: left;" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active hvr-underline-from-center">
+            <li class="nav-item active hvr-underline-reveal">
                 <a class="nav-link" routerLinkActive="active" [routerLink]="['home']" href="#">Inicio<span class="sr-only">(current)</span></a>
             </li>
 
-            <li class="nav-item dropdown is-hoverable hvr-underline-from-center" routerLinkActive="active">
-                <a class="nav-link dropdown-toggle" [routerLink]="['heroes']" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <li class="nav-item dropdown " routerLinkActive="active">
+                <a class="nav-link dropdown-toggle hvr-underline-reveal" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Colecciones
-        </a>
+                </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" style="color:black;" href="#">Anillos</a>
-                    <a class="dropdown-item" style="color:black;" href="#">Dijes</a>
-                    <a class="dropdown-item" style="color:black;" href="#">Collares</a>
-                    <a class="dropdown-item" style="color:black;" href="#">Esculturas</a>
-                    <a class="dropdown-item" style="color:black;" href="#">Aretes</a>
+                    <a class="dropdown-item hvr-underline-reveal" href="#" [routerLink]="['heroes']" href="#">Todas las colecciones</a>
                     <div class="dropdown-divider"></div>
+                    <a class="dropdown-item hvr-underline-reveal" href="#">Anillos</a>
+                    <a class="dropdown-item hvr-underline-reveal" href="#">Dijes</a>
+                    <a class="dropdown-item hvr-underline-reveal" href="#">Collares</a>
+                    <a class="dropdown-item hvr-underline-reveal" href="#">Esculturas</a>
+                    <a class="dropdown-item hvr-underline-reveal" href="#">Aretes</a>
+
                 </div>
             </li>
-            <li class="nav-item hvr-underline-from-center" routerLinkActive="active">
-                <a class="nav-link" [routerLink]="['about']" href="#">Quienes somos</a>
+            <li class="nav-item hvr-underline-reveal" routerLinkActive="active">
+                <a class="nav-link" [routerLink]="['about']" href="#">¿Quiénes somos?</a>
             </li>
-            <li class="nav-item hvr-underline-from-center">
+            <li class="nav-item hvr-underline-reveal">
                 <a class="nav-link disabled" href="#">Disabled</a>
             </li>
         </ul>
     </div>
 </nav>
-
-
-
-
-
-
-
-
-
-
