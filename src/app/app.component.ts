@@ -30,6 +30,8 @@ ngOnInit () {}
     if (window.pageYOffset > 238) {
       const element = document.getElementById('navbar');
       element.classList.add('sticky');
+      element.classList.add('is-warning');
+      element.classList.add('is-bold');
     } else if (window.pageYOffset <= 167) {
      const element = document.getElementById('navbar');
        element.classList.remove('sticky');
