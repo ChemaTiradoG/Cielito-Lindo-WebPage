@@ -2,9 +2,10 @@
     width: 100%;
     padding-top: 60px;
     padding-bottom: 60px;
-    background-color: black;
+    /* background-color: black; */
     opacity: .8;
     box-shadow: 0px 7px 44px 0px rgba(150,148,150,1);
+    background-image: linear-gradient(141deg,#140e03 0,#302303 71%,#251804 100%);
 }
 
 .sub-menu-pie{
