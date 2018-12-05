@@ -6,27 +6,39 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+            <li class="nav-item active hvr-underline-from-center">
                 <a class="nav-link" routerLinkActive="active" [routerLink]="['home']" href="#">Inicio<span class="sr-only">(current)</span></a>
             </li>
 
-            <li class="nav-item dropdown is-hoverable">
-                <a class="nav-link dropdown-toggle" routerLinkActive="active" [routerLink]="['heroes']" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <li class="nav-item dropdown is-hoverable hvr-underline-from-center" routerLinkActive="active">
+                <a class="nav-link dropdown-toggle" [routerLink]="['heroes']" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Colecciones
         </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" style="color:black;" href="#">Action</a>
-                    <a class="dropdown-item" style="color:black;" href="#">Another action</a>
+                    <a class="dropdown-item" style="color:black;" href="#">Anillos</a>
+                    <a class="dropdown-item" style="color:black;" href="#">Dijes</a>
+                    <a class="dropdown-item" style="color:black;" href="#">Collares</a>
+                    <a class="dropdown-item" style="color:black;" href="#">Esculturas</a>
+                    <a class="dropdown-item" style="color:black;" href="#">Aretes</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" style="color:black;" href="#">Something else here</a>
                 </div>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" routerLinkActive="active" [routerLink]="['about']" href="#">Quienes somos</a>
+            <li class="nav-item hvr-underline-from-center" routerLinkActive="active">
+                <a class="nav-link" [routerLink]="['about']" href="#">Quienes somos</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item hvr-underline-from-center">
                 <a class="nav-link disabled" href="#">Disabled</a>
             </li>
         </ul>
     </div>
 </nav>
+
+
+
+
+
+
+
+
+
+
