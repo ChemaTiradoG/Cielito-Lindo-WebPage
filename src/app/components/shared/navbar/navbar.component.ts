@@ -30,16 +30,4 @@ export class NavbarComponent implements OnInit {
     // console.log(termino);
     this.router.navigate( ['/buscar', termino]);
   }
-
-  @HostListener('window:scroll', ['$event'])
-  onWindowScroll(e) {
-    if (window.pageYOffset > 238) {
-      const element = document.getElementById('logo');
-      element.classList.add('logo-visible');
-    } else if (window.pageYOffset <= 167) {
-     const element = document.getElementById('logo');
-       element.classList.remove('logo-visible');
-    }
- }
-
 }
