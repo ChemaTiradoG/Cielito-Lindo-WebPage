@@ -44,7 +44,11 @@
     margin: auto;
 }
 
-
+.todo-centro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /*------------------- LO MAS NUEVO -----------------*/
 
 .contenido-home-nuevo {
