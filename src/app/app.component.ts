@@ -34,7 +34,17 @@ ngOnInit () {}
      const element = document.getElementById('navbar');
        element.classList.remove('sticky');
     }
- }
+  }
 
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    if (event.target.innerWidth <= 991) {
+      const element = document.getElementById('navbar');
+      element.classList.remove('todo-centro');
+    } else if (event.target.innerWidth > 991) {
+      const element = document.getElementById('navbar');
+      element.classList.add('todo-centro');
+    }
+  }
 
 }
