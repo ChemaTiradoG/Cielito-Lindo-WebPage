@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ColeccionesService, Heroe } from '../../servicios/colecciones.service';
+import { ColeccionesService, Producto } from '../../servicios/colecciones.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
-  heroes: Heroe [] = [];
+  colecciones: Producto [] = [];
 
   constructor( private _coleccionesService: ColeccionesService,
     private router: Router) {
@@ -17,13 +17,13 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.heroes = this._coleccionesService.getColecciones();
+    this.colecciones = this._coleccionesService.getColecciones();
 
    // console.log(this.heroes);
   }
 
-  verHeroe(idx: number) {
-    this.router.navigate(['/heroe', idx ]);
+  verProducto(idx: number) {
+    this.router.navigate(['/producto', idx ]);
   }
 
 }

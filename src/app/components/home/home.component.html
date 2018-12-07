@@ -55,7 +55,7 @@
                 <img src="assets/img/categorias/dije.png" alt="" class="float-left todo-centro" style="width: 250px; margin-left: 30px; margin-top: 0px">
             </div>
             <div class="column is-one-third hvr-shutter-out-vertical">
-                
+
             </div>
             <div class="column is-one-third">
                 <img src="assets/img/prueba-1.jpg" alt="">
@@ -72,7 +72,7 @@
         <h1>Héroes <small>Marvel y DC</small></h1>
         <hr>
         <div class="card-columns">
-            <app-heroe-tarjeta (heroeSeleccionado)="verHeroe( $event )" [heroe]="heroe" [index]="i" *ngFor="let heroe of heroes; let i = index"></app-heroe-tarjeta>
+            <app-producto-tarjeta (productoSeleccionado)="verProducto( $event )" [producto]="producto" [index]="i" *ngFor="let producto of colecciones; let i = index"></app-producto-tarjeta>
         </div>
     </div>
 </div>

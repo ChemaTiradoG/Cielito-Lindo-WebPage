@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class ColeccionesService {
 
-    private colecciones: Heroe[] = [
+    private colecciones: Producto[] = [
     {
       nombre: 'Aquaman',
       bio: 'El poder más reconocido de Aquaman es la capacidad telepática para comunicarse con la vida marina, la cual puede convocar a grandes distancias.',
@@ -58,27 +58,27 @@ export class ColeccionesService {
         console.log('Servicio listo para usar!!!');
      }
 
-     getColecciones(): Heroe[] {
+     getColecciones(): Producto[] {
          return this.colecciones;
      }
 
-     getHeroe(idx: string) {
+     getProducto(idx: string) {
        return this.colecciones[idx];
      }
 
-     buscarColecciones( termino: string ): Heroe[] {
+     buscarColecciones( termino: string ): Producto[] {
 
-      let coleccionesArr: Heroe[] = [];
+      let coleccionesArr: Producto[] = [];
       termino = termino.toLowerCase();
 
       for ( let i =0; i < this.colecciones.length; i++ ) {
 
-        let heroe = this.colecciones[i];
-         let nombre = heroe.nombre.toLowerCase();
+        let producto = this.colecciones[i];
+         let nombre = producto.nombre.toLowerCase();
 
          if ( nombre.indexOf( termino ) >= 0) {
-          heroe.idx = i;
-          coleccionesArr.push( heroe );
+          producto.idx = i;
+          coleccionesArr.push( producto );
          }
        }
        return coleccionesArr;
@@ -86,7 +86,7 @@ export class ColeccionesService {
 
 }
 
-export interface Heroe {
+export interface Producto {
       nombre: string;
       bio: string;
       img: string;

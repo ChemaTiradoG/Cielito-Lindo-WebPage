@@ -3,20 +3,20 @@ import { ActivatedRoute } from '@angular/router';
 import { ColeccionesService } from '../../../servicios/colecciones.service';
 
 @Component({
-  selector: 'app-heroe',
-  templateUrl: './heroe.component.html',
+  selector: 'app-producto',
+  templateUrl: './producto.component.html',
   styles: []
 })
-export class HeroeComponent {
+export class ProductoComponent {
 
-  heroe: any = {};
+  producto: any = {};
 
   constructor( private activatedRoute: ActivatedRoute,
                private _coleccionesService: ColeccionesService ) {
 
     this.activatedRoute.params.subscribe( params => {
       // console.log( params['id'] );
-      this.heroe = this._coleccionesService.getHeroe ( params['id'] );
+      this.producto = this._coleccionesService.getProducto ( params['id'] );
     } );
   }
 
