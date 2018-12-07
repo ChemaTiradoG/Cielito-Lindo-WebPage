@@ -21,6 +21,7 @@ import { BuscadorComponent } from './components/buscador/buscador.component';
 import { ProductoTarjetaComponent } from './components/shared/producto-tarjeta/producto-tarjeta.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { FooterComponent } from './components/footer/footer.component';
     ProductoTarjetaComponent,
     HeaderComponent,
     FooterComponent,
+    ContactoComponent,
   ],
   imports: [
     BrowserModule,
