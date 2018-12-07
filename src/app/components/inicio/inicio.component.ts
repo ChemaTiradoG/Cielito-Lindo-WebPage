@@ -3,11 +3,11 @@ import { ColeccionesService, Producto } from '../../servicios/colecciones.servic
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-inicio',
+  templateUrl: './inicio.component.html',
+  styleUrls: ['./inicio.component.css']
 })
-export class HomeComponent implements OnInit {
+export class InicioComponent implements OnInit {
 
   colecciones: Producto [] = [];
 
