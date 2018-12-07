@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 @Injectable()
-export class HeroesService {
+export class ColeccionesService {
 
-    private heroes: Heroe[] = [
+    private colecciones: Heroe[] = [
     {
       nombre: 'Aquaman',
       bio: 'El poder más reconocido de Aquaman es la capacidad telepática para comunicarse con la vida marina, la cual puede convocar a grandes distancias.',
@@ -58,30 +58,30 @@ export class HeroesService {
         console.log('Servicio listo para usar!!!');
      }
 
-     getHeroes(): Heroe[] {
-         return this.heroes;
+     getColecciones(): Heroe[] {
+         return this.colecciones;
      }
 
      getHeroe(idx: string) {
-       return this.heroes[idx];
+       return this.colecciones[idx];
      }
 
-     buscarHeroes( termino: string ): Heroe[] {
+     buscarColecciones( termino: string ): Heroe[] {
 
-      let heroesArr: Heroe[] = [];
+      let coleccionesArr: Heroe[] = [];
       termino = termino.toLowerCase();
 
-      for ( let i =0; i < this.heroes.length; i++ ) {
+      for ( let i =0; i < this.colecciones.length; i++ ) {
 
-        let heroe = this.heroes[i];
+        let heroe = this.colecciones[i];
          let nombre = heroe.nombre.toLowerCase();
 
          if ( nombre.indexOf( termino ) >= 0) {
           heroe.idx = i;
-          heroesArr.push( heroe );
+          coleccionesArr.push( heroe );
          }
        }
-       return heroesArr;
+       return coleccionesArr;
      }
 
 }
