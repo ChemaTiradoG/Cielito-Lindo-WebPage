@@ -10,7 +10,7 @@
   .hvr-outline-out:before {
     content: '';
     position: absolute;
-    border: #e1e1e1 solid 4px;
+    border: transparent solid 1px;
     top: 0;
     right: 0;
     bottom: 0;
@@ -21,10 +21,13 @@
     transition-property: top, right, bottom, left;
   }
   .hvr-outline-out:hover:before, .hvr-outline-out:focus:before, .hvr-outline-out:active:before {
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    border: #e1e1e1 solid 5px;
     top: -8px;
     right: -8px;
     bottom: -8px;
     left: -8px;
+    transition: all .2s ease-in-out;
   }
 
   /* Shutter Out Vertical */
@@ -84,4 +87,8 @@
   .hvr-rotate:hover img, .hvr-rotate:focus img, .hvr-rotate:active img{
     -webkit-transform: rotate(4deg);
     transform: rotate(4deg);
+  }
+
+  .col-tam{
+    height: 300px;
   }
