@@ -7,15 +7,15 @@ import { APP_ROUTING } from './app.routes';
 
 
 // Servicios
-import { HeroesService } from './servicios/heroes.service';
+import { ColeccionesService } from './servicios/colecciones.service';
 
 
 // Componentes
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
-import { AboutComponent } from './components/about/about.component';
-import { HeroesComponent } from './components/heroes/heroes.component';
+import { NosotrosComponent } from './components/nosotros/nosotros.component';
+import { ColeccionesComponent } from './components/colecciones/colecciones.component';
 import { HeroeComponent } from './components/shared/heroe/heroe.component';
 import { BuscadorComponent } from './components/buscador/buscador.component';
 import { HeroeTarjetaComponent } from './components/shared/heroe-tarjeta/heroe-tarjeta.component';
@@ -27,8 +27,8 @@ import { FooterComponent } from './components/footer/footer.component';
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    AboutComponent,
-    HeroesComponent,
+    NosotrosComponent,
+    ColeccionesComponent,
     HeroeComponent,
     BuscadorComponent,
     HeroeTarjetaComponent,
@@ -40,7 +40,7 @@ import { FooterComponent } from './components/footer/footer.component';
     APP_ROUTING,
   ],
   providers: [
-    HeroesService
+    ColeccionesService
   ],
   bootstrap: [AppComponent]
 })

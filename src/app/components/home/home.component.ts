@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HeroesService, Heroe } from '../../servicios/heroes.service';
+import { ColeccionesService, Heroe } from '../../servicios/colecciones.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -11,13 +11,13 @@ export class HomeComponent implements OnInit {
 
   heroes: Heroe [] = [];
 
-  constructor( private _heroesService: HeroesService,
+  constructor( private _coleccionesService: ColeccionesService,
     private router: Router) {
     //  console.log('Constructor');
   }
 
   ngOnInit() {
-    this.heroes = this._heroesService.getHeroes();
+    this.heroes = this._coleccionesService.getColecciones();
 
    // console.log(this.heroes);
   }

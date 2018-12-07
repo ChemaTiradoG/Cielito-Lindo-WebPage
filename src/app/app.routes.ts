@@ -1,17 +1,17 @@
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
-import { AboutComponent } from './components/about/about.component';
-import { HeroesComponent } from './components/heroes/heroes.component';
+import { NosotrosComponent } from './components/nosotros/nosotros.component';
+import { ColeccionesComponent } from './components/colecciones/colecciones.component';
 import { HeroeComponent } from './components/shared/heroe/heroe.component';
 import { BuscadorComponent } from './components/buscador/buscador.component';
 
 const APP_ROUTES: Routes = [
-    { path: 'home', component: HomeComponent },
-    { path: 'about', component: AboutComponent },
-    { path: 'heroes', component: HeroesComponent },
+    { path: 'inicio', component: HomeComponent },
+    { path: 'nosotros', component: NosotrosComponent },
+    { path: 'colecciones', component: ColeccionesComponent },
     { path: 'heroe/:id', component: HeroeComponent },
     { path: 'buscar/:termino', component: BuscadorComponent },
-    { path: '**', pathMatch: 'full', redirectTo: 'home' }
+    { path: '**', pathMatch: 'full', redirectTo: 'inicio' }
 ];
 
 export const APP_ROUTING = RouterModule.forRoot(APP_ROUTES, {useHash: true});
