@@ -42,6 +42,136 @@ export class ColeccionesService {
       categoria: 'Arete',
       pureza: '14k',
       destacado: false
+    },
+    {
+      nombre: 'ANILLO 18K ORO BLANCO SOLO ARGOLLA / LO ACOMPARA',
+      descripcion: 'ANILLO 18K ORO BLANCO SOLO ARGOLLA / LO ACOMPARA',
+      img: 'assets/img/categorias/110300044.jpg',
+      codigo: '110300044',
+      material: 'Oro blanco',
+      categoria: 'Anillo',
+      pureza: '14k',
+      destacado: false
+    },
+    {
+      nombre: 'ANILLO 14K ORO BLANCO C/ DIAMANTES CORTE REDONDO O BRILLANTE',
+      descripcion: 'ANILLO 14K ORO BLANCO C/ DIAMANTES CORTE REDONDO O BRILLANTE',
+      img: 'assets/img/categorias/112200036.jpg',
+      codigo: '112200036',
+      material: 'Oro blanco',
+      categoria: 'Anillo',
+      pureza: '14k',
+      destacado: false
+    },
+    {
+      nombre: 'Anillo 14K oro blanco diamantre corte baguete y corte brillante',
+      descripcion: 'ANILLO 14K ORO BLANCO DIAMANTRE CORTE BAGUETE Y CORTE BRILLANTE',
+      img: 'assets/img/categorias/115000028.jpg',
+      codigo: '115000028',
+      material: 'Oro blanco',
+      categoria: 'Anillo',
+      pureza: '14k',
+      destacado: false
+    },
+    {
+      nombre: 'ANILLO 14K ORO BLANCO CON ZAFIROS ROJOS Y DIAMANTES',
+      descripcion: 'ANILLO 14K ORO BLANCO CON ZAFIROS ROJOS Y DIAMANTES',
+      img: 'assets/img/categorias/115000066.jpg',
+      codigo: '115000066',
+      material: 'Oro blanco',
+      categoria: 'Anillo',
+      pureza: '14k',
+      destacado: false
+    },
+    {
+      nombre: 'ANILLO 14K ORO BLANCO DIAMANTES Y ZAFIRO ROSA',
+      descripcion: 'ANILLO 14K ORO BLANCO DIAMANTES Y ZAFIRO ROSA',
+      img: 'assets/img/categorias/115000128.jpg',
+      codigo: '115000128',
+      material: 'Oro blanco',
+      categoria: 'Anillo',
+      pureza: '14k',
+      destacado: false
+    },
+    {
+      nombre: 'ANILLO 14K ORO BLANCO DIAMANTES Y ZAFIRO ROSA',
+      descripcion: 'ANILLO 14K ORO BLANCO DIAMANTES Y ZAFIRO ROSA',
+      img: 'assets/img/categorias/115000131.jpg',
+      codigo: '115000131',
+      material: 'Oro blanco',
+      categoria: 'Anillo',
+      pureza: '14k',
+      destacado: false
+    },
+    {
+      nombre: 'ANILLO 14K ORO BLANCO DIAMANTES Y ESMERALDA',
+      descripcion: 'ANILLO 14K ORO BLANCO DIAMANTES Y ESMERALDA',
+      img: 'assets/img/categorias/160100207.jpg',
+      codigo: '160100207',
+      material: 'Oro blanco',
+      categoria: 'Anillo',
+      pureza: '14k',
+      destacado: false
+    },
+    {
+      nombre: 'PIEZA DIAMANTE CORTE BAGUET. PIEZA AL CENTRO CORTE REDONDO O CORTE BRILLANTE',
+      descripcion: 'PIEZA DIAMANTE CORTE BAGUET. PIEZA AL CENTRO CORTE REDONDO O CORTE BRILLANTE',
+      img: 'assets/img/categorias/331810013.jpg',
+      codigo: '331810013',
+      material: 'Diamante',
+      categoria: 'Pieza',
+      pureza: 'N/A',
+      destacado: false
+    },
+    {
+      nombre: 'ANILLO 14K ORO BLANCO DIAMANTE EN CORTE REDONDO C/ GRABADOS Y RELIEVES',
+      descripcion: 'ANILLO 14K ORO BLANCO DIAMANTE EN CORTE REDONDO C/ GRABADOS Y RELIEVES',
+      img: 'assets/img/categorias/170200050.jpg',
+      codigo: '170200050',
+      material: 'Oro blanco',
+      categoria: 'Anillo',
+      pureza: '14k',
+      destacado: false
+    },
+    {
+      nombre: 'ANILLO 14K ORO AMARILLO DIAMANTES ALREDEDOR ESMERALDA EN EL CENTRO',
+      descripcion: 'ANILLO 14K ORO AMARILLO DIAMANTES ALREDEDOR ESMERALDA EN EL CENTRO',
+      img: 'assets/img/categorias/160100215.jpg',
+      codigo: '160100215',
+      material: 'Oro',
+      categoria: 'Anillo',
+      pureza: '14k',
+      destacado: false
+    },
+    {
+      nombre: 'ANILLO 14K ORO AMARILLO DIAMANTES 5 ACOMPAÑADA DE ESMERALDA CORTE PERA',
+      descripcion: 'ANILLO 14K ORO AMARILLO DIAMANTES 5 ACOMPAÑADA DE ESMERALDA CORTE PERA',
+      img: 'assets/img/categorias/160100094.jpg',
+      codigo: '160100094',
+      material: 'Oro',
+      categoria: 'Anillo',
+      pureza: '14k',
+      destacado: false
+    },
+    {
+      nombre: 'ANILLO 14K ORO AMARILLO C/ HOJAS A LOS COSTADOS  Y ACOMPAÑADO DE ESMERALDA CORTE ',
+      descripcion: 'ANILLO 14K ORO AMARILLO C/ HOJAS A LOS COSTADOS  Y ACOMPAÑADO DE ESMERALDA CORTE ',
+      img: 'assets/img/categorias/170200067.jpg',
+      codigo: '170200067',
+      material: 'Oro',
+      categoria: 'Anillo',
+      pureza: '14k',
+      destacado: false
+    },
+    {
+      nombre: 'ANILLO 14K ORO AMARILLO C/ DIAMANTES CORTE BRILLANTE ACOMPAÑADA DE ESMERALDA',
+      descripcion: 'ANILLO 14K ORO AMARILLO C/ DIAMANTES CORTE BRILLANTE ACOMPAÑADA DE ESMERALDA',
+      img: 'assets/img/categorias/170200070.jpg',
+      codigo: '170200070',
+      material: 'Oro',
+      categoria: 'Anillo',
+      pureza: '14k',
+      destacado: false
     }
   ];
 
