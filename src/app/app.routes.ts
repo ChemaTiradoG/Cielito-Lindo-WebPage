@@ -4,6 +4,7 @@ import { NosotrosComponent } from './components/nosotros/nosotros.component';
 import { ColeccionesComponent } from './components/colecciones/colecciones.component';
 import { ProductoComponent } from './components/shared/producto/producto.component';
 import { BuscadorComponent } from './components/buscador/buscador.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
 
 const APP_ROUTES: Routes = [
     { path: 'inicio', component: InicioComponent },
@@ -11,6 +12,7 @@ const APP_ROUTES: Routes = [
     { path: 'colecciones', component: ColeccionesComponent },
     { path: 'producto/:id', component: ProductoComponent },
     { path: 'buscar/:termino', component: BuscadorComponent },
+    { path: 'contacto', component: ContactoComponent },
     { path: '**', pathMatch: 'full', redirectTo: 'inicio' }
 ];
 
