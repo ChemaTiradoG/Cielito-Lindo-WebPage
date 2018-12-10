@@ -69,7 +69,9 @@
         </div>
     </div>
     <div class="espacio contenido-home-nuevo">
-        <h1>Héroes <small>Marvel y DC</small></h1>
+        <!-- <div stlye="font-size:50px;"> -->
+        <h3 class="title is-3">Lo más destacado</h3>
+        <!-- </div> -->
         <hr>
         <div class="card-columns">
             <app-producto-tarjeta (productoSeleccionado)="verProducto( $event )" [producto]="producto" [index]="i" *ngFor="let producto of colecciones; let i = index"></app-producto-tarjeta>

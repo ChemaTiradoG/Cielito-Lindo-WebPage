@@ -1,13 +1,16 @@
-<div class="card text-center animated fadeIn fast">
-    <img class="card-img-top" [src]="producto.img" [alt]="producto.nombre">
+<div class="card text-center animated fadeIn fast todo-centro">
+    <!-- style="padding-left:0px;padding-rigth:0px;min-width: 240px;max-width: 356px;" -->
     <div class="card-body">
-        <h5 class="card-title">{{ producto.nombre}}</h5>
-        <p class="card-text">{{ producto.bio }}</p>
-        <p class="card-text"><small class="text-muted"> {{ producto.aparicion }}</small></p>
+        <h5 class="card-title" style="font-weight: bold;font-size: 18px;">{{ producto.descripcion}}</h5>
+        <p class="card-text" style="font-size: 16px;">{{ producto.material }}/{{producto.pureza}}</p>
+        <!-- <p class="card-text"><small class="text-muted"> {{ producto.categoria }}</small></p> -->
 
-        <button (click)="verProducto(i)" type="button" class="btn btn-outline-primary btn-block">
+        <!-- <button (click)="verProducto(i)" type="button" class="btn btn-outline-primary btn-block">
         Ver más...
-      </button>
+      </button> -->
+
         <!--<a [routerLink]="['/producto',i]" class="btn btn-outline-primary">Ver más link...</a>-->
     </div>
+    <img class="card-img-top" style="max-width: 280px;padding-bottom: 20px;" [src]="producto.img" [alt]="producto.nombre">
+    <!-- style="padding-bottom: 50px; width:250px;" -->
 </div>
