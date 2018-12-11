@@ -74,7 +74,7 @@
         <!-- </div> -->
         <hr>
         <div class="card-columns">
-            <app-producto-tarjeta (productoSeleccionado)="verProducto( $event )" [producto]="producto" [index]="i" *ngFor="let producto of colecciones; let i = index"></app-producto-tarjeta>
+            <app-producto-tarjeta class="hvr-ripple-out" (productoSeleccionado)="verProducto( $event )" [producto]="producto" [index]="i" *ngFor="let producto of colecciones; let i = index"></app-producto-tarjeta>
         </div>
     </div>
 </div>
