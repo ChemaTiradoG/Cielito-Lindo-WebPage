@@ -1,3 +1,13 @@
 .buscador{
-    max-width: 300px
+    max-width: 260px;
+}
+.buscador-chico{
+    width: 70%;
+}
+
+.cont-buscador{
+    text-align: right;
+}
+.cont-buscador-centro{
+    text-align: center;
 }
