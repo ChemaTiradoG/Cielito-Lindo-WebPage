@@ -11,7 +11,6 @@
 
 
 <div class="card-columns">
-    <!--
     <div class="card animated fadeIn fast" *ngFor="let heroe of heroes; let i = index">
         <img class="card-img-top" [src]="heroe.img" [alt]="heroe.nombre">
         <div class="card-body">
@@ -23,8 +22,7 @@
               Ver más...
             </button>
             <--<a [routerLink]="['/heroe',i]" class="btn btn-outline-primary">Ver más link...</a> ->
-</div>
-</div>
--->
+        </div>
+    </div>
     <app-producto-tarjeta [producto]="producto" [index]="producto.idx" *ngFor="let producto of colecciones; let i = index"></app-producto-tarjeta>
 </div>
