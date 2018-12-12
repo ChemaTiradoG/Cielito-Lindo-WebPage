@@ -57,18 +57,6 @@
 }
 
 
-/*------------------- CATEGORIAS -----------------*/
-
-.categorias {
-    min-height: 600px;
-}
-
-.categorias img {
-    max-height: 300px;
-    width: auto;
-}
-
-
 /* Animaciones */
 
 .animated {

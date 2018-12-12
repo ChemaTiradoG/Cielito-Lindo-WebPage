@@ -2,7 +2,20 @@
     height: 300px;
   }
 
-  .fondo-1{
+/*------------------- CATEGORIAS -----------------*/
+
+.categorias {
+  min-height: 600px;
+  background-color: #dfb583;
+}
+
+.categorias img {
+  max-height: 300px;
+  width: auto;
+}
+
+
+.fondo-1{
     background-image: url("src/assets/img/categorias/banner-collar.jpg");
     background-position: right;
     background-repeat: no-repeat;
