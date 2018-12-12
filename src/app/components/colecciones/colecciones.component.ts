@@ -31,10 +31,18 @@ export class ColeccionesComponent implements OnInit {
     if (event.target.innerWidth <= 768) {
       const element = document.getElementById('buscador');
       element.classList.remove('buscador');
+      element.classList.add('buscador-chico');
+      const contenedor = document.getElementById('cont-buscador');
+      contenedor.classList.remove('cont-buscador');
+      contenedor.classList.add('cont-buscador-chico');
       // console.log(event.target.innerWidth);
     } else if (event.target.innerWidth > 768) {
       const element = document.getElementById('buscador');
       element.classList.add('buscador');
+      element.classList.remove('buscador-chico');
+      const contenedor = document.getElementById('cont-buscador');
+      contenedor.classList.add('cont-buscador');
+      contenedor.classList.remove('cont-buscador-chico');
     }
   }
 
