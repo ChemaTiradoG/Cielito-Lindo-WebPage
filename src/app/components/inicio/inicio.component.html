@@ -51,38 +51,35 @@
 <div class="contenido animated fadeIn fast">
     <div class="categorias">
         <div class="columns is-gapless is-multiline">
-                <div class="column is-two-thirds img-contenedor"  routerLinkActive="active">
-                    <a class="nav-item" [routerLink]="['../colecciones']">
-                        <img src="assets/img/categorias/banner-collar.jpg" alt="Dije de Fuego">
-                    </a>
-                </div>
-                <div class="column is-one-third img-contenedor"  routerLinkActive="active">
-                    <a class="nav-item" [routerLink]="['..7colecciones']">
+            <div class="column is-two-thirds img-contenedor" routerLinkActive="active">
+                <a class="nav-item" [routerLink]="['../colecciones']">
+                    <img src="assets/img/categorias/banner-collar.jpg" alt="Dije de Fuego">
+                </a>
+            </div>
+            <div class="column is-one-third img-contenedor" routerLinkActive="active">
+                <a class="nav-item" [routerLink]="['../colecciones']">
                     <img src="assets/img/categorias/banner-chico-1.jpg" alt="Dije de Fuego">
-                    </a>
-                </div>
-                <div class="column is-one-third img-contenedor"  routerLinkActive="active">
-                    <a class="nav-item" [routerLink]="['..7colecciones']">
-                        <img src="assets/img/categorias/banner-chico-2.jpg" alt="Dije de Fuego">
-                    </a>
-                </div>
-                <div class="column is-one-third img-contenedor"  routerLinkActive="active">
-                    <a class="nav-item" [routerLink]="['..7colecciones']">
-                        <img src="assets/img/categorias/banner-chico-3.jpg" alt="Dije de Fuego">
-                    </a>
-                </div>
-                <div class="column is-one-third img-contenedor"  routerLinkActive="active">
-                    <a class="nav-item" [routerLink]="['colecciones']">
-                        <!-- <img src="assets/img/categorias/aretes.png" alt="Aretes Zarros" style="height: 200px;"> -->
-                        <img src="assets/img/categorias/banner-chico-4.jpg" alt="Dije de Fuego">
-                    </a>
-                </div>
+                </a>
+            </div>
+            <div class="column is-one-third img-contenedor" routerLinkActive="active">
+                <a class="nav-item" [routerLink]="['../colecciones']">
+                    <img src="assets/img/categorias/banner-chico-2.jpg" alt="Dije de Fuego">
+                </a>
+            </div>
+            <div class="column is-one-third img-contenedor" routerLinkActive="active">
+                <a class="nav-item" [routerLink]="['../colecciones']">
+                    <img src="assets/img/categorias/banner-chico-3.jpg" alt="Dije de Fuego">
+                </a>
+            </div>
+            <div class="column is-one-third img-contenedor" routerLinkActive="active">
+                <a class="nav-item" [routerLink]="['../colecciones']">
+                    <img src="assets/img/categorias/banner-chico-4.jpg" alt="Dije de Fuego">
+                </a>
+            </div>
         </div>
     </div>
     <div class="espacio contenido-home-nuevo">
-        <!-- <div stlye="font-size:50px;"> -->
         <h3 class="title is-3">Lo más destacado</h3>
-        <!-- </div> -->
         <hr>
         <div class="card-columns">
             <app-producto-tarjeta class="hvr-grow-shadow" (productoSeleccionado)="verProducto( $event )" [producto]="producto" [index]="i" *ngFor="let producto of colecciones; let i = index"></app-producto-tarjeta>

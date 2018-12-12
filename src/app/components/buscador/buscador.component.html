@@ -1,7 +1,7 @@
 <h1>Buscando: <small>{{ termino }}</small></h1>
 <hr>
 
-<div class="row animated fadeIn fast" *ngIf="heroes.length == 0">
+<div class="row animated fadeIn fast" *ngIf="colecciones.length == 0">
     <div class="col-md-12">
         <div class="alert alert-info" role="alert">
             No existen resultados con el término: {{ termino }}
@@ -11,18 +11,17 @@
 
 
 <div class="card-columns">
-    <div class="card animated fadeIn fast" *ngFor="let heroe of heroes; let i = index">
-        <img class="card-img-top" [src]="heroe.img" [alt]="heroe.nombre">
+    <div class="card animated fadeIn fast" *ngFor="let producto of colecciones; let i = index">
         <div class="card-body">
-            <h5 class="card-title">{{ heroe.nombre}}</h5>
-            <p class="card-text">{{ heroe.bio }}</p>
-            <p class="card-text"><small class="text-muted"> {{ heroe.aparicion }}</small></p>
+            <h5 class="card-title" style="font-weight: bold;font-size: 18px;">{{ producto.descripcion}}</h5>
+            <p class="card-text" style="font-size: 16px;">{{ producto.material }}/{{producto.pureza}}</p>
 
-            <button (click)="verHeroe(i)" type="button" class="btn btn-outline-primary btn-block">
+            <button (click)="verProducto(i)" type="button" class="btn btn-outline-primary btn-block">
               Ver más...
             </button>
-            <a [routerLink]="['/heroe',i]" class="btn btn-outline-primary">Ver más link...</a>
+            <a [routerLink]="['/producto',i]" class="btn btn-outline-primary">Ver más link...</a>
         </div>
+        <img class="card-img-top" style="max-width: 280px;padding-bottom: 20px;" [src]="producto.img" [alt]="producto.nombre">
     </div>
     <app-producto-tarjeta [producto]="producto" [index]="producto.idx" *ngFor="let producto of colecciones; let i = index"></app-producto-tarjeta>
 </div>
