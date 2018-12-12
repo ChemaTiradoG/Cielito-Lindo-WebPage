@@ -1,3 +1,11 @@
 .col-tam{
     height: 300px;
   }
+
+  .fondo-1{
+    background-image: url("src/assets/img/categorias/banner-collar.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
