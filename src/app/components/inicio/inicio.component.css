@@ -24,10 +24,10 @@
   }
 
 .img-contenedor img {
-    -webkit-transition:all .9s ease;
-    -moz-transition:all .9s ease;
-    -o-transition:all .9s ease;
-    -ms-transition:all .9s ease;
+    -webkit-transition:all .6s ease;
+    -moz-transition:all .6s ease;
+    -o-transition:all .6s ease;
+    -ms-transition:all .6s ease;
     width:100%;
   }
   .img-contenedor:hover img {
