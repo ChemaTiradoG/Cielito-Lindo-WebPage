@@ -21,7 +21,7 @@
             <button (click)="verHeroe(i)" type="button" class="btn btn-outline-primary btn-block">
               Ver más...
             </button>
-            <--<a [routerLink]="['/heroe',i]" class="btn btn-outline-primary">Ver más link...</a> ->
+            <a [routerLink]="['/heroe',i]" class="btn btn-outline-primary">Ver más link...</a>
         </div>
     </div>
     <app-producto-tarjeta [producto]="producto" [index]="producto.idx" *ngFor="let producto of colecciones; let i = index"></app-producto-tarjeta>
