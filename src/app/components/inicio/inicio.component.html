@@ -82,7 +82,7 @@
         <h3 class="title is-3">Lo más destacado</h3>
         <hr>
         <div class="card-columns">
-            <app-producto-tarjeta class="hvr-grow-shadow" (productoSeleccionado)="verProducto( $event )" [producto]="producto" [index]="i" *ngFor="let producto of colecciones; let i = index"></app-producto-tarjeta>
+            <app-producto-tarjeta (productoSeleccionado)="verProducto( $event )" [producto]="producto" [index]="i" *ngFor="let producto of colecciones; let i = index"></app-producto-tarjeta>
         </div>
     </div>
 </div>

@@ -5,17 +5,18 @@
         </div>
         <div class="column" style="padding-bottom:0px; padding-top:0px;">
             <div class="cont-buscador" id="cont-buscador">
-                <input class="input is-warning buscador" id="buscador" style="margin-top: 24px;" type="text" placeholder="Buscar en el catalogo">
-                <a class="button is-warning" style="margin-top: 24px; margin-left: 6px">Buscar</a></div>
+                <input class="input is-warning buscador" id="buscador" 
+                style="margin-top: 24px;" type="text" placeholder="Buscar en el catalogo" 
+                (keyup.enter)="buscarProducto(buscarTexto.value)" #buscarTexto>
+                <a class="button is-warning" type="button" style="margin-top: 24px; margin-left: 6px" 
+                (click)="buscarProducto(buscarTexto.value)">Buscar</a>
+            </div>
         </div>
     </div>
 
     <hr style="margin-top:0px;">
     <div class="card-columns ">
-
-
-        <app-producto-tarjeta class="hvr-grow-shadow" (productoSeleccionado)="verProducto( $event )" [producto]="producto" [index]="i" *ngFor="let producto of colecciones; let i = index"></app-producto-tarjeta>
-
-
+        <app-producto-tarjeta class="hrv-grow" (productoSeleccionado)="verProducto( $event )" 
+        [producto]="producto" [index]="i" *ngFor="let producto of colecciones; let i = index"></app-producto-tarjeta>
     </div>
 </div>

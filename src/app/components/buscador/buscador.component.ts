@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ColeccionesService } from '../../servicios/colecciones.service';
-
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-buscador',

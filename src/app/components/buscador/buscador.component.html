@@ -1,27 +1,33 @@
-<h1>Buscando: <small>{{ termino }}</small></h1>
-<hr>
-
-<div class="row animated fadeIn fast" *ngIf="colecciones.length == 0">
-    <div class="col-md-12">
-        <div class="alert alert-info" role="alert">
-            No existen resultados con el término: {{ termino }}
+<div class="contenido espacio animated fadeIn fast">
+    <div class="columns">
+        <div class="column" style="padding-bottom:0px; padding-top:0px;">
+            <div *ngIf="colecciones.length == 0; else templateName">
+                <!-- <div class="col-md-12">
+                    <div class="alert alert-info" role="alert">
+                        No hay resultados de: {{ termino }}
+                    </div>
+                </div> -->
+                <h3 class="title is-3" style="margin-top:20px;">No hay resultados de: <small>{{ termino }}</small></h3>
+            </div>
+            <ng-template #templateName>
+                <div class="column" style="padding-bottom:0px; padding-top:0px;">
+                    <h3 class="title is-3" style="margin-top:20px;">Buscando: <small>{{ termino }}</small></h3>
+                </div>
+            </ng-template>
         </div>
-    </div>
-</div>
-
-
-<div class="card-columns">
-    <div class="card animated fadeIn fast" *ngFor="let producto of colecciones; let i = index">
-        <div class="card-body">
-            <h5 class="card-title" style="font-weight: bold;font-size: 18px;">{{ producto.descripcion}}</h5>
-            <p class="card-text" style="font-size: 16px;">{{ producto.material }}/{{producto.pureza}}</p>
-
-            <button (click)="verProducto(i)" type="button" class="btn btn-outline-primary btn-block">
-              Ver más...
-            </button>
-            <a [routerLink]="['/producto',i]" class="btn btn-outline-primary">Ver más link...</a>
+        <div class="column" style="padding-bottom:0px; padding-top:0px;">
+                <!-- <div class="cont-buscador" id="cont-buscador">
+                    <input class="input is-warning buscador" id="buscador" 
+                    style="margin-top: 24px;" type="text" placeholder="Buscar en el catalogo" 
+                    (keyup.enter)="buscarProducto(buscarTexto.value)" #buscarTexto>
+                    <a class="button is-warning" type="button" style="margin-top: 24px; margin-left: 6px" 
+                    (click)="buscarProducto(buscarTexto.value)">Buscar</a>
+                </div> -->
         </div>
-        <img class="card-img-top" style="max-width: 280px;padding-bottom: 20px;" [src]="producto.img" [alt]="producto.nombre">
+    </div>      
+    <hr>
+    <div class="card-columns">
+        <app-producto-tarjeta class="hvr-grow" 
+        [producto]="producto" [index]="i" *ngFor="let producto of colecciones; let i = index"></app-producto-tarjeta>
     </div>
-    <app-producto-tarjeta [producto]="producto" [index]="producto.idx" *ngFor="let producto of colecciones; let i = index"></app-producto-tarjeta>
 </div>

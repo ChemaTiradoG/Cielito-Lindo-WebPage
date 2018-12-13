@@ -38,6 +38,7 @@ ngOnInit () {}
 
   @HostListener('window:resize', ['$event'])
   onResize(event) {
+    // console.log(event.target.innerWidth);
     if (event.target.innerWidth <= 991) {
       const element = document.getElementById('navbar');
       element.classList.remove('todo-centro');

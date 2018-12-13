@@ -1,13 +1,18 @@
 .buscador{
     max-width: 260px;
 }
-.buscador-chico{
-    width: 70%;
-}
 
 .cont-buscador{
     text-align: right;
 }
-.cont-buscador-centro{
-    text-align: center;
+
+@media screen and (max-width: 768px){
+    .buscador{
+        max-width: 70%;
+    }
+    .cont-buscador{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
