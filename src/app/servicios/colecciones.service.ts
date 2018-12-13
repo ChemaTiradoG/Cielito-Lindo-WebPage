@@ -9,7 +9,7 @@ export class ColeccionesService {
       img: 'assets/img/categorias/dije.png',
       codigo: '160300063',
       material: 'Oro',
-      categoria: 'Dije',
+      categoria: 'Dijes',
       pureza: '14K',
       destacado: false
     },
@@ -19,7 +19,7 @@ export class ColeccionesService {
       img: 'assets/img/categorias/anillo-de-fuego.png',
       codigo: '160100183',
       material: 'Oro',
-      categoria: 'Anillo',
+      categoria: 'Anillos',
       pureza: '14K',
       destacado: false
     },
@@ -29,7 +29,7 @@ export class ColeccionesService {
       img: 'assets/img/categorias/azteca.png',
       codigo: '727710527',
       material: 'Plata',
-      categoria: 'Escultura',
+      categoria: 'Esculturas',
       pureza: '0.925',
       destacado: false
     },
@@ -39,7 +39,7 @@ export class ColeccionesService {
       img: 'assets/img/categorias/aretes.png',
       codigo: '115100010',
       material: 'Oro blanco',
-      categoria: 'Arete',
+      categoria: 'Aretes',
       pureza: '14k',
       destacado: false
     },
@@ -49,7 +49,7 @@ export class ColeccionesService {
       img: 'assets/img/categorias/110300044.jpg',
       codigo: '110300044',
       material: 'Oro blanco',
-      categoria: 'Anillo',
+      categoria: 'Anillos',
       pureza: '14k',
       destacado: false
     },
@@ -59,7 +59,7 @@ export class ColeccionesService {
       img: 'assets/img/categorias/112200036.jpg',
       codigo: '112200036',
       material: 'Oro blanco',
-      categoria: 'Anillo',
+      categoria: 'Anillos',
       pureza: '14k',
       destacado: false
     },
@@ -69,7 +69,7 @@ export class ColeccionesService {
       img: 'assets/img/categorias/115000028.jpg',
       codigo: '115000028',
       material: 'Oro blanco',
-      categoria: 'Anillo',
+      categoria: 'Anillos',
       pureza: '14k',
       destacado: false
     },
@@ -79,7 +79,7 @@ export class ColeccionesService {
       img: 'assets/img/categorias/115000066.jpg',
       codigo: '115000066',
       material: 'Oro blanco',
-      categoria: 'Anillo',
+      categoria: 'Anillos',
       pureza: '14k',
       destacado: false
     },
@@ -89,7 +89,7 @@ export class ColeccionesService {
       img: 'assets/img/categorias/115000128.jpg',
       codigo: '115000128',
       material: 'Oro blanco',
-      categoria: 'Anillo',
+      categoria: 'Anillos',
       pureza: '14k',
       destacado: false
     },
@@ -99,7 +99,7 @@ export class ColeccionesService {
       img: 'assets/img/categorias/115000131.jpg',
       codigo: '115000131',
       material: 'Oro blanco',
-      categoria: 'Anillo',
+      categoria: 'Anillos',
       pureza: '14k',
       destacado: false
     },
@@ -109,7 +109,7 @@ export class ColeccionesService {
       img: 'assets/img/categorias/160100207.jpg',
       codigo: '160100207',
       material: 'Oro blanco',
-      categoria: 'Anillo',
+      categoria: 'Anillos',
       pureza: '14k',
       destacado: false
     },
@@ -119,7 +119,7 @@ export class ColeccionesService {
       img: 'assets/img/categorias/331810013.jpg',
       codigo: '331810013',
       material: 'Diamante',
-      categoria: 'Pieza',
+      categoria: 'Piezas',
       pureza: 'N/A',
       destacado: false
     },
@@ -129,7 +129,7 @@ export class ColeccionesService {
       img: 'assets/img/categorias/170200050.jpg',
       codigo: '170200050',
       material: 'Oro blanco',
-      categoria: 'Anillo',
+      categoria: 'Anillos',
       pureza: '14k',
       destacado: false
     },
@@ -139,7 +139,7 @@ export class ColeccionesService {
       img: 'assets/img/categorias/160100215.jpg',
       codigo: '160100215',
       material: 'Oro',
-      categoria: 'Anillo',
+      categoria: 'Anillos',
       pureza: '14k',
       destacado: false
     },
@@ -149,7 +149,7 @@ export class ColeccionesService {
       img: 'assets/img/categorias/160100094.jpg',
       codigo: '160100094',
       material: 'Oro',
-      categoria: 'Anillo',
+      categoria: 'Anillos',
       pureza: '14k',
       destacado: false
     },
@@ -159,7 +159,7 @@ export class ColeccionesService {
       img: 'assets/img/categorias/170200067.jpg',
       codigo: '170200067',
       material: 'Oro',
-      categoria: 'Anillo',
+      categoria: 'Anillos',
       pureza: '14k',
       destacado: false
     },
@@ -169,7 +169,7 @@ export class ColeccionesService {
       img: 'assets/img/categorias/170200070.jpg',
       codigo: '170200070',
       material: 'Oro',
-      categoria: 'Anillo',
+      categoria: 'Anillos',
       pureza: '14k',
       destacado: false
     }
