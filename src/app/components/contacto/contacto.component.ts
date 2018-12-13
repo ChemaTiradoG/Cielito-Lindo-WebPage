@@ -1,3 +1,6 @@
+
+
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +10,60 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactoComponent implements OnInit {
 
-  constructor() { }
-
+  index: any;
   ngOnInit() {
+  }
+
+  constructor() {
+
+  }
+
+  guardarDatos() {
+          const tmpNombreCompleto = <HTMLInputElement> document.getElementById('txtNombreCompleto');
+          const tmpDireccion = <HTMLInputElement> document.getElementById('txtDireccion');
+          const datos = {
+            nombreCompleto: tmpNombreCompleto.value,
+            direccion: tmpDireccion.value,
+          };
+      if (this.index) {
+          const http = new XMLHttpRequest();
+          http.onreadystatechange = function() {
+              if (this.readyState === 4 && this.status === 200) {
+                  // console.log(JSON.parse(this.responseText));
+              }
+          };
+          http.open('PUT', 'https://cielitolindo-377ae.firebaseio.com/datos.json' + this.index + '.json');
+          http.setRequestHeader('Content-Type', 'application/json');
+          http.send(JSON.stringify(datos));
+      } else {
+          const http = new XMLHttpRequest();
+          http.onreadystatechange = function() {
+              if (this.readyState === 4 && this.status === 200) {
+                  // document.getElementById('formulario').reset();
+              }
+          };
+          http.open('POST', 'https://cielitolindo-377ae.firebaseio.com/datos.json', true);
+          http.setRequestHeader('Content-Type', 'application/json');
+          http.send(JSON.stringify(datos));
+      }
+      alert('Datos guardados');
+      location.href = 'index.html';
+  }
+
+      validar() {
+        const tmpNombreCompleto = <HTMLInputElement> document.getElementById('txtNombreCompleto');
+        const tmpDireccion = <HTMLInputElement> document.getElementById('txtDireccion');
+      document.getElementById('txtNombreCompleto').style.border = '2px solid black';
+      document.getElementById('txtDireccion').style.border = '2px solid red';
+      if (tmpNombreCompleto.value === '') {
+          document.getElementById('txtNombreCompleto').style.border = '2px solid red';
+          document.getElementById('txtNombreCompleto').focus();
+      } else if (tmpDireccion.value === '') {
+          document.getElementById('txtDireccion').style.border = '2px solid red';
+          document.getElementById('txtDireccion').focus();
+      } else {
+          this.guardarDatos();
+        }
   }
 
 }
