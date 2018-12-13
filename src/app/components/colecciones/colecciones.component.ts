@@ -22,6 +22,11 @@ export class ColeccionesComponent implements OnInit {
    // console.log(this.heroes);
   }
 
+  buscarProducto( termino: string ) {
+    console.log(termino);
+    this.router.navigate( ['/buscar', termino]);
+  }
+
   verProducto(idx: number) {
     this.router.navigate(['/producto', idx ]);
   }
