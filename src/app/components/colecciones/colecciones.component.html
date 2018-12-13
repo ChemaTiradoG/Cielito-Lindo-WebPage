@@ -16,7 +16,7 @@
 
     <hr style="margin-top:0px;">
     <div class="card-columns ">
-        <app-producto-tarjeta class="hrv-grow" (productoSeleccionado)="verProducto( $event )" 
+        <app-producto-tarjeta class="crecer" (productoSeleccionado)="verProducto( $event )" 
         [producto]="producto" [index]="i" *ngFor="let producto of colecciones; let i = index"></app-producto-tarjeta>
     </div>
 </div>

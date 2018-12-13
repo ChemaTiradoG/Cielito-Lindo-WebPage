@@ -1,4 +1,5 @@
-.animacion-linea :hover {
-    width: 100%;
-    background-color: black;
+.card:hover h4{
+    color: #c0963c;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
 }

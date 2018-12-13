@@ -1,8 +1,8 @@
 <!-- *ngFor="let producto of colecciones; let i = index -->
-<div class="card text-center hrv-grow" style="padding-top: 0px;padding-bottom: 0px;" (click)="verProducto()" type="button">
+<div class="card text-center" style="padding-top: 0px;padding-bottom: 0px;" (click)="verProducto()" type="button">
     <!-- style="padding-left:0px;padding-rigth:0px;min-width: 240px;max-width: 356px;" -->
     <div class="card-body">
-        <h5 class="card-title" style="font-weight: bold;font-size: 18px;">{{ producto.descripcion}}</h5>
+        <h4 class="card-title" style="font-weight: bold;font-size: 18px;">{{ producto.descripcion}}</h4>
         <p class="card-text" style="font-size: 16px;">{{ producto.material }}/{{producto.pureza}}</p>
         <!-- <p class="card-text"><small class="text-muted"> {{ producto.categoria }}</small></p> -->
 

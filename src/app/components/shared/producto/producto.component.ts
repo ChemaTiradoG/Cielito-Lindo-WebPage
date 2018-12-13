@@ -5,7 +5,7 @@ import { ColeccionesService } from '../../../servicios/colecciones.service';
 @Component({
   selector: 'app-producto',
   templateUrl: './producto.component.html',
-  styles: []
+  styleUrls: ['./producto.component.css']
 })
 export class ProductoComponent {
 

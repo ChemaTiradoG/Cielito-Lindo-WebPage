@@ -1,0 +1,10 @@
+.contenido-producto{
+    border: #e1e1e1 solid 4px;
+    width: 90%;
+    margin: 80px auto auto auto;
+    padding: 30px 30px;
+}
+.contenido-tabla{
+    width: 50%;
+    text-align: center;
+}
