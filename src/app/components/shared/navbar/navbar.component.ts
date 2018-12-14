@@ -25,4 +25,11 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit() {
   }
+  verProducto(idx: number) {
+    this.router.navigate(['/producto', idx ]);
+  }
+  buscarCategoria( termino: string ) {
+    console.log(termino);
+    this.router.navigate( ['/buscar', termino]);
+  }
 }

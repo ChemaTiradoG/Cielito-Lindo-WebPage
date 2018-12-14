@@ -2,11 +2,6 @@
     <div class="columns">
         <div class="column" style="padding-bottom:0px; padding-top:0px;">
             <div *ngIf="colecciones.length == 0; else templateName">
-                <!-- <div class="col-md-12">
-                    <div class="alert alert-info" role="alert">
-                        No hay resultados de: {{ termino }}
-                    </div>
-                </div> -->
                 <h3 class="title is-3" style="margin-top:20px;">No hay resultados de: <small>{{ termino }}</small></h3>
             </div>
             <ng-template #templateName>
@@ -28,6 +23,6 @@
     <hr>
     <div class="card-columns">
         <app-producto-tarjeta class="crecer" 
-        [producto]="producto" [index]="i" *ngFor="let producto of colecciones; let i = index"></app-producto-tarjeta>
+        [producto]="producto" [index]="producto.idx" *ngFor="let producto of colecciones; let i = index"></app-producto-tarjeta>
     </div>
 </div>

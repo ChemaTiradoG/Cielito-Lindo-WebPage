@@ -17,11 +17,11 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item hvr-underline-reveal" href="#" [routerLink]="['colecciones']" href="#">Todas las colecciones</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item hvr-underline-reveal" href="#">Aretes</a>
-                    <a class="dropdown-item hvr-underline-reveal" href="#">Anillos</a>
-                    <a class="dropdown-item hvr-underline-reveal" href="#">Dijes</a>
-                    <a class="dropdown-item hvr-underline-reveal" href="#">Collares</a>
-                    <a class="dropdown-item hvr-underline-reveal" href="#">Esculturas</a>
+                    <a class="dropdown-item hvr-underline-reveal" (click)="buscarCategoria('ARETES')">Aretes</a>
+                    <a class="dropdown-item hvr-underline-reveal" (click)="buscarCategoria('ANILLOS')">Anillos</a>
+                    <a class="dropdown-item hvr-underline-reveal" (click)="buscarCategoria('DIJES')">Dijes</a>
+                    <a class="dropdown-item hvr-underline-reveal" (click)="buscarCategoria('COLLARES')">Collares</a>
+                    <a class="dropdown-item hvr-underline-reveal" (click)="buscarCategoria('ESCULTURAS')">Esculturas</a>
                 </div>
             </li>
             <li class="nav-item hvr-underline-reveal" routerLinkActive="active">
