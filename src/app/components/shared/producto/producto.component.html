@@ -8,9 +8,12 @@
             <img [src]="producto.img" class="img-fluid" [alt]="producto.nombre">
         </div>
         <div class="column" style="padding: 50px 50px;">
-            <h4 class=" title is-4">
+            <h4 class="title is-4">
                 {{producto.descripcion}}
             </h4>
+            <h6 class="title is-6" style="padding-bottom:0px; padding-top:0px;">
+                {{producto.codigo}}
+            </h6>
             <table class="table is-hoverable">
                 <tr>
                     <td style="justify-content: right;">Material:</td>
