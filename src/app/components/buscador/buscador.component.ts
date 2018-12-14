@@ -5,16 +5,14 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-buscador',
-  templateUrl: './buscador.component.html',
-  styleUrls: ['./buscador.component.css']
+  templateUrl: './buscador.component.html'
 })
 export class BuscadorComponent implements OnInit {
 
   colecciones: any[] = [];
   termino: string;
   constructor( private activatedRoute: ActivatedRoute,
-                private _coleccionesService: ColeccionesService,
-                private router: Router ) { }
+                private _coleccionesService: ColeccionesService ) { }
 
   ngOnInit() {
 
@@ -26,11 +24,4 @@ export class BuscadorComponent implements OnInit {
     });
   }
 
-  buscarProducto( termino: string ) {
-    console.log(termino);
-    this.router.navigate( ['/buscar', termino]);
-  }
-  verProducto(idx: number) {
-    this.router.navigate(['/producto', idx ]);
-  }
 }
