@@ -13,7 +13,8 @@ export class BuscadorComponent implements OnInit {
   colecciones: any[] = [];
   termino: string;
   constructor( private activatedRoute: ActivatedRoute,
-                private _coleccionesService: ColeccionesService ) { }
+                private _coleccionesService: ColeccionesService,
+                private router: Router ) { }
 
   ngOnInit() {
 
@@ -25,4 +26,11 @@ export class BuscadorComponent implements OnInit {
     });
   }
 
+  buscarProducto( termino: string ) {
+    console.log(termino);
+    this.router.navigate( ['/buscar', termino]);
+  }
+  verProducto(idx: number) {
+    this.router.navigate(['/producto', idx ]);
+  }
 }
