@@ -26,11 +26,11 @@ export class BuscadorComponent implements OnInit {
     });
   }
 
-  buscarProducto( termino: string ) {
-    console.log(termino);
-    this.router.navigate( ['/buscar', termino]);
-  }
-  verProducto(idx: number) {
-    this.router.navigate(['/producto', idx ]);
-  }
+  // buscarProducto( termino: string ) {
+  //   console.log(termino);
+  //   this.router.navigate( ['/buscar', termino]);
+  // }
+  // verProducto(idx: number) {
+  //   this.router.navigate(['/producto', idx ]);
+  // }
 }
