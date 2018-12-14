@@ -9,12 +9,10 @@
 @media screen and (max-width: 768px){
     .buscador{
         max-width: 70%;
-        transition: all .5s ease-in-out;
     }
     .cont-buscador{
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: all .5s ease-in-out;
     }
 }

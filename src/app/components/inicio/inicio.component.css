@@ -4,19 +4,19 @@
 
 /*------------------- CATEGORIAS -----------------*/
 
-/* .categorias {
+.categorias {
   background-color: #dfb583;
   /* flex: auto; */
   max-height: auto;
   min-height: auto;
-} */
+}
 
 /* .categorias img {
   max-height: 300px;
   width: auto;
 } */
 
-/* .img-contenedor img {
+.img-contenedor img {
     -webkit-transition:all .6s ease;
     -moz-transition:all .6s ease;
     -o-transition:all .6s ease;
@@ -30,7 +30,7 @@
     -o-transform:scale(1.03);
     transform:scale(1.03);
   }
-  .img-contenedor {
+  .img-contenedor {/*Ancho y altura son modificables al requerimiento de cada uno*/
     overflow:hidden;
   }
 
@@ -120,4 +120,4 @@
   .texto-3, .texto-2{
     font-size: 250%;
   }
-} */
+}
