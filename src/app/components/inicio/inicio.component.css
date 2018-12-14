@@ -5,23 +5,16 @@
 /*------------------- CATEGORIAS -----------------*/
 
 .categorias {
-  min-height: 600px;
   background-color: #dfb583;
+  /* flex: auto; */
+  max-height: auto;
+  min-height: auto;
 }
 
-.categorias img {
+/* .categorias img {
   max-height: 300px;
   width: auto;
-}
-
-
-.fondo-1{
-    background-image: url("src/assets/img/categorias/banner-collar.jpg");
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
+} */
 
 .img-contenedor img {
     -webkit-transition:all .6s ease;
@@ -40,3 +33,91 @@
   .img-contenedor {/*Ancho y altura son modificables al requerimiento de cada uno*/
     overflow:hidden;
   }
+
+.contenedor-texto-1{
+  position: absolute;
+  width: 30%;
+  margin-top: 4%;
+  margin-left: 3%;
+  z-index: 700;
+}
+.texto-1{
+  font-family: 'Playfair Display', serif;
+  font-size: 350%;
+}
+
+.contenedor-texto-2{
+  position: absolute;
+  width: 17%;
+  margin-top: 4%;
+  margin-left: 8%;
+  z-index: 700;
+  text-align: right;
+}
+.texto-2{
+  font-family: 'Playfair Display', serif;
+  font-size: 250%;
+}
+
+.contenedor-texto-3{
+  position: absolute;
+  width: 17%;
+  margin-top: 4%;
+  margin-left: 1%;
+  z-index: 700;
+}
+.texto-3{
+  font-family: 'Playfair Display', serif;
+  font-size: 250%;
+}
+
+@media screen and (max-width: 1145px){
+  .texto-1{
+    font-size: 250%;
+  }
+  .texto-3, .texto-2{
+    font-size: 200%;
+  }
+}
+@media screen and (max-width: 920px){
+	.texto-3, .texto-2{
+    font-size: 150%;
+  }
+}
+@media screen and (max-width: 769px){
+  .contenedor-texto-1{
+    width: 40%;
+  }
+  .texto-1{
+    font-size: 300%;
+  }
+  .contenedor-texto-3{
+    width: 50%;
+    margin-top: 7%;
+    margin-left: 4%;
+  }
+  .contenedor-texto-2{
+    width: 50%;
+    margin-top: 7%;
+    margin-left: 25%;
+  }
+  .texto-3, .texto-2{
+    font-size: 350%;
+  }
+}
+@media screen and (max-width: 640px){
+	.texto-1{
+    font-size: 250%;
+  }
+  .texto-3, .texto-2{
+    font-size: 300%;
+  }
+}
+@media screen and (max-width: 516px){
+	.texto-1{
+    font-size: 200%;
+  }
+  .texto-3, .texto-2{
+    font-size: 250%;
+  }
+}
