@@ -43,7 +43,7 @@
 }
 .texto-1{
   font-family: 'Playfair Display', serif;
-  font-size: 250%;
+  font-size: 350%;
 }
 
 .contenedor-texto-2{
@@ -72,7 +72,10 @@
 }
 
 @media screen and (max-width: 1145px){
-	.texto-3, .texto-2{
+  .texto-1{
+    font-size: 250%;
+  }
+  .texto-3, .texto-2{
     font-size: 200%;
   }
 }
