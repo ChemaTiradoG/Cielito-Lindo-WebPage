@@ -5,7 +5,8 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-buscador',
-  templateUrl: './buscador.component.html'
+  templateUrl: './buscador.component.html',
+  styleUrls: ['./buscador.component.css']
 })
 export class BuscadorComponent implements OnInit {
 
