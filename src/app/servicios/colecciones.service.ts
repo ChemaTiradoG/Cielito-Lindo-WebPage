@@ -195,12 +195,16 @@ export class ColeccionesService {
       for ( let i =0; i < this.colecciones.length; i++ ) {
 
         let producto = this.colecciones[i];
-         let nombre = producto.nombre.toLowerCase();
+        let nombre = producto.nombre.toLowerCase();
+        let categoria = producto.categoria.toLowerCase();
 
          if ( nombre.indexOf( termino ) >= 0) {
           producto.idx = i;
           coleccionesArr.push( producto );
-         }
+         } else if ( categoria.indexOf( termino ) >= 0) {
+           producto.idx = i;
+           coleccionesArr.push( producto );
+        }
        }
        return coleccionesArr;
      }

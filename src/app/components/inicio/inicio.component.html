@@ -52,7 +52,7 @@
     <div class="categorias">
         <div class="columns is-gapless is-multiline">
             <div class="column is-two-thirds img-contenedor hvr-float-shadow" routerLinkActive="active">
-                <a class="nav-item" [routerLink]="['../colecciones']">
+                <a class="nav-item" (click)="buscarCategoria('COLLARES')">
                     <div class="contenedor-texto-1">
                         <h2 class="texto-1 subtitle is-1">
                             Colección de Collares
@@ -63,7 +63,7 @@
                 </a>
             </div>
             <div class="column is-one-third img-contenedor" routerLinkActive="active">
-                <a class="nav-item" [routerLink]="['../colecciones']">
+                <a class="nav-item" (click)="buscarCategoria('DIJES')">
                     <div class="contenedor-texto-2">
                         <h2 class="texto-2 subtitle is-1">
                             Colección de Dijes
@@ -74,7 +74,7 @@
                 </a>
             </div>
             <div class="column is-one-third img-contenedor" routerLinkActive="active">
-                <a class="nav-item" [routerLink]="['../colecciones']">
+                <a class="nav-item" (click)="buscarCategoria('ANILLOS')">
                     <div class="contenedor-texto-2">
                         <h2 class="texto-2 subtitle is-1">
                             Colección de Anillos
@@ -85,7 +85,7 @@
                 </a>
             </div>
             <div class="column is-one-third img-contenedor" routerLinkActive="active">
-                <a class="nav-item" [routerLink]="['../colecciones']">
+                <a class="nav-item" (click)="buscarCategoria('ESCULTURAS')">
                     <div class="contenedor-texto-3">
                             <h2 class="texto-3 subtitle is-1">
                                 Colección de Esculturas
@@ -96,7 +96,7 @@
                 </a>
             </div>
             <div class="column is-one-third img-contenedor" routerLinkActive="active">
-                <a class="nav-item" [routerLink]="['../colecciones']">
+                <a class="nav-item" (click)="buscarCategoria('ARETES')">
                     <div class="contenedor-texto-3">
                             <h2 class="texto-3 subtitle is-1">
                                 Colección de Anillos
@@ -112,7 +112,8 @@
         <h3 class="title is-3">Lo más destacado</h3>
         <hr>
         <div class="card-columns">
-            <app-producto-tarjeta class="crecer" (productoSeleccionado)="verProducto( $event )" [producto]="producto" [index]="i" *ngFor="let producto of colecciones; let i = index"></app-producto-tarjeta>
+            <app-producto-tarjeta class="crecer" (productoSeleccionado)="verProducto( $event )" [producto]="producto" 
+            [index]="i" *ngFor="let producto of colecciones; let i = index"></app-producto-tarjeta>
         </div>
     </div>
 </div>

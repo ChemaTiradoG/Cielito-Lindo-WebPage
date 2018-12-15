@@ -25,5 +25,8 @@ export class InicioComponent implements OnInit {
   verProducto(idx: number) {
     this.router.navigate(['/producto', idx ]);
   }
-
+  buscarCategoria( termino: string ) {
+    console.log(termino);
+    this.router.navigate( ['/buscar', termino]);
+  }
 }

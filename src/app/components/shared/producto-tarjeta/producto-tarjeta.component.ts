@@ -20,9 +20,7 @@ export class ProductoTarjetaComponent implements OnInit {
   }
 
   verProducto() {
-    // console.log(this.index);
     this.router.navigate(['/producto', this.index ]);
-   // this.productoSeleccionado.emit( this.index );
   }
 
 }
