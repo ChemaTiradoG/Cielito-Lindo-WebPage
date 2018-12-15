@@ -1,97 +1,59 @@
-<!-- <div class="contenido espacio animated fadeIn fast">
+<div class="contenido espacio">
     <div class="field">
         <label class="label">Nombre</label>
         <div class="control">
-            <input class="input is-warning" type="text" placeholder="Ingresa tu nombre">
+            <input class="input" id="txtNombre" type="text" placeholder="Ingrese su nombre">
+        </div>
+        <div class="invisible" id="nombreError">
+            <p class="help is-danger">Este campo es requerido.</p>
         </div>
     </div>
-
     <div class="field">
-        <label class="label">Username</label>
-        <div class="control has-icons-left has-icons-right">
-            <input class="input is-success" type="text" placeholder="Text input">
-            <span class="icon is-small is-left">
-            <i class="fas fa-user"></i>
-          </span>
-            <span class="icon is-small is-right">
-            <i class="fas fa-check"></i>
-          </span>
-        </div>
-        <p class="help is-success">This username is available</p>
-    </div>
-
-    <div class="field">
-        <label class="label">Email</label>
-        <div class="control has-icons-left has-icons-right">
-            <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
-            <span class="icon is-small is-left">
-            <i class="fas fa-envelope"></i>
-          </span>
-            <span class="icon is-small is-right">
-            <i class="fas fa-exclamation-triangle"></i>
-          </span>
-        </div>
-        <p class="help is-danger">This email is invalid</p>
-    </div>
-
-    <div class="field">
-        <label class="label">Subject</label>
+        <label class="label">Correo</label>
         <div class="control">
-            <div class="select">
-                <select>
-              <option>Select dropdown</option>
-              <option>With options</option>
-            </select>
-            </div>
+            <input class="input" required id="txtCorreo" type="text" placeholder="Ingrese su correo">
+        </div>
+        <div class="invisible" id="correoError">
+            <p class="help is-danger">Este campo es requerido.</p>
+        </div>
+    </div>
+    <div class="field">
+        <label class="label">Telefono (opcional)</label>
+        <div class="control">
+            <input class="input" id="txtTelefono" type="text" placeholder="Tngrese su telefono (opcional)">
+        </div>
+    </div>
+    <div class="field">
+        <label class="label">Mensaje</label>
+        <div class="control">
+            <textarea class="textarea" required id="txtMensaje" placeholder="Ingrese su mensaje"></textarea>
+        </div>
+        <div class="invisible" id="mensajeError">
+            <p class="help is-danger">Este campo es requerido.</p>
+        </div>
+    </div>
+    <div id="no">
+        <div class="alert alert-danger visible" role="alert">
+            A simple danger alert—check it out!
+        </div>
+    </div>
+    <div id="si">
+        <div class="alert alert-success visible" role="alert">
+            A simple success alert—check it out!
         </div>
     </div>
 
-    <div class="field">
-        <label class="label">Message</label>
-        <div class="control">
-            <textarea class="textarea" placeholder="Textarea"></textarea>
-        </div>
-    </div>
-
-    <div class="field">
-        <div class="control">
-            <label class="checkbox">
-            <input type="checkbox">
-            I agree to the <a href="#">terms and conditions</a>
-          </label>
-        </div>
-    </div>
-
-    <div class="field">
-        <div class="control">
-            <label class="radio">
-            <input type="radio" name="question">
-            Yes
-          </label>
-            <label class="radio">
-            <input type="radio" name="question">
-            No
-          </label>
-        </div>
-    </div>
 
     <div class="field is-grouped">
         <div class="control">
-            <button class="button is-link">Submit</button>
+            <button (click)="validar()" class="button is-link is-warning">Guardar</button>
         </div>
         <div class="control">
-            <button class="button is-text">Cancel</button>
+            <button class="button is-text" [routerLink]="['inicio']">Cancelar</button>
         </div>
     </div>
-</div> -->
 
-<form name="formulario" id="formulario" onsubmit="return false;">
-    <div>
-        <label for="txtNombreCompleto">Nombre completo: </label>
-        <input type="text" name="txtNombreCompleto" id="txtNombreCompleto" placeholder="Nombre completo">
-        <label for="txtDireccion">Dirección:</label>
-        <textarea name="txtDireccion" id="txtDireccion" placeholder="Dirección"></textarea>
-        <br>
-        <button (click)="guardarDatos()">Guardar</button>
-    </div>
-</form>
+
+
+
+</div>
