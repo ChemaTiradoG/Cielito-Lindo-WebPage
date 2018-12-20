@@ -35,7 +35,7 @@ export class ContactoComponent implements OnInit {
                 console.log(JSON.parse(this.responseText));
               }
           };
-            http.open('PUT', 'https://cielitolindo-377ae.firebaseio.com/datos.json' + this.index + '.json');
+            http.open('PUT', 'https://cielitolindo-260b3.firebaseio.com/datos.json' + this.index + '.json');
             http.setRequestHeader('Content-Type', 'application/json');
             http.send(JSON.stringify(datos));
       } else {
@@ -47,7 +47,7 @@ export class ContactoComponent implements OnInit {
                 console.log('no entro');
               }
           };
-          http.open('POST', 'https://cielitolindo-377ae.firebaseio.com/datos.json', true);
+          http.open('POST', 'https://cielitolindo-260b3.firebaseio.com/datos.json', true);
           http.setRequestHeader('Content-Type', 'application/json');
           http.send(JSON.stringify(datos));
       }
